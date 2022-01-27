@@ -22,6 +22,11 @@ For univariate forecasting, there are many possibilities such as LSTM (Long Shor
 Model is evaluated by calculation AIC and BIC score. Lowest score indicates that model is accurate. Hyper parameter of model is trend, seasonality, differencing order. By carefully looking at Autocorelation and Partial corelation plot, order of Autoregressive term and order of Moving average term can be determined. 
 summary of model is shown as follows:
 ![image](images/summary.png)
+
+#### Model performance
+Model performance can be explained by KDE graph, Correlogram etc. as shown below
+![image](images/model1.PNG)
+![image](images/model2.PNG)
 ### Performance analysis
 ![image](images/mape.png)
 
