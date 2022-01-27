@@ -9,3 +9,13 @@ Air quality has a significant impact on the overall well-being of humans and soc
 A number of factors in the air can have an impact on its quality. Multiple sensors monitoring various parameters are used in air quality monitoring sensing systems, which are available as a whole suite. The role of temperature  and carbon monoxide in air quality is vital. This issue is tackled by Temporal forecasting of temperature and Carbon Monoxide (CO) sensor data one day ahead: It can assist the general public and government officials in anticipating trends early in order to make timely decisions and take preventative actions.
 Advanced machine learning algorithms combined with sensor data have the potential to be a leap forward and in addressing the problem listed above. Therefore, the primary emphasis of this sub-theme 2 is on the development of machine learning algorithm to solve the defined problem. To evaluate the developed machine learning algorithm, the participants can use the dataset from the air quality chemical multisensory device deployed in the field in an Italian city.
 
+## Approach
+Seasonal Auto-Regressive Integrated Moving Average with eXogenous factors (SARIMAX)
+- Accurate and powerful model(optimized) for short training time
+- Includes seasonality, trend and noise in model
+- It includes exogenous factors (noises) as there is lot of noise in dataset from 18th March to 24th March 2004
+- Seasonality as local trend in dataset repeats every 24 hours
+- Hyperparameter tuning using AIC (Akaike's Information Criteria) and BIC (Bayesian Information Criteria)
+
+
+
