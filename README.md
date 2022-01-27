@@ -17,6 +17,11 @@ For univariate forecasting, there are many possibilities such as LSTM (Long Shor
 - Seasonality as local trend in dataset repeats every 24 hours
 - Hyperparameter tuning using AIC (Akaike's Information Criteria) and BIC (Bayesian Information Criteria)
 
+
+### Model Optimization
+Model is evaluated by calculation AIC and BIC score. Lowest score indicates that model is accurate. Hyper parameter of model is trend, seasonality, differencing order. By carefully looking at Autocorelation and Partial corelation plot, order of Autoregressive term and order of Moving average term can be determined. 
+summary of model is shown as follows:
+![image](images/summary.png)
 ### Performance analysis
 ![image](images/mape.png)
 
