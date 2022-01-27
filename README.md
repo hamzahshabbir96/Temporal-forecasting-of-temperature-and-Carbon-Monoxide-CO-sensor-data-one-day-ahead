@@ -10,12 +10,13 @@ A number of factors in the air can have an impact on its quality. Multiple senso
 Advanced machine learning algorithms combined with sensor data have the potential to be a leap forward and in addressing the problem listed above. Therefore, the primary emphasis of this sub-theme 2 is on the development of machine learning algorithm to solve the defined problem. To evaluate the developed machine learning algorithm, the participants can use the dataset from the air quality chemical multisensory device deployed in the field in an Italian city.
 
 ## Approach
-Seasonal Auto-Regressive Integrated Moving Average with eXogenous factors (SARIMAX)
+For univariate forecasting, there are many possibilities such as LSTM (Long Short-Term Memory), Autoregressive integrated moving average(ARIMA), Seasonal Autoregressive integrated moving average (SARIMA) etc. Given data has very short training period (7-13 days) and by looking at our data, we can see there is huge change in Temperature after 18th of March. LSTM will not be a good idea because of limitation in training period and ARIMA model does not takes into account seasonality and we can see there is seasonality of 24 hours in our dataset. Our data also consits of lot of noises so best option will be Seasonal Auto-Regressive Integrated Moving Average with eXogenous factors,which also takes noise factor into account. SARIMAX will reduces error more on test data as compared to other model.
 - Accurate and powerful model(optimized) for short training time
 - Includes seasonality, trend and noise in model
 - It includes exogenous factors (noises) as there is lot of noise in dataset from 18th March to 24th March 2004
 - Seasonality as local trend in dataset repeats every 24 hours
 - Hyperparameter tuning using AIC (Akaike's Information Criteria) and BIC (Bayesian Information Criteria)
 
-
+### Performance analysis
+![image](images/mape.png)
 
